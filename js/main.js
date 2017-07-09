@@ -25,6 +25,8 @@
       members.push(i);
     }
     // 命令の表示
+    // 0からnの乱数の取得 ⇒ Math.floor(Math.random() * (n + 1))
+    // 配列の場合 ⇒ Maht.floor(Math.random() * array.length)
     var random = Math.floor(Math.random() * orders.length);
     var order = orders[random];
     members.sort(function() {return Math.random() - .5});
